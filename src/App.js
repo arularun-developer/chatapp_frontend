@@ -18,7 +18,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route exact path='/chat' element={<ChatPage />}/>
-            {/* <Route exact path='*' element={<NotFoundPage />}/> */}
+            <Route exact path='*' element={<NotFoundPage />}/>
           </Routes>
         </BrowserRouter>
         <FullscreenLoader />
@@ -34,7 +34,7 @@ function App() {
           <Route exact path='/register' element={<RegistrationPage />} />
           <Route exact path='/forgetPassword' element={<ForgetPasswordPage />} />
           <Route exact path='/resetPassword/:token' element={<ResetPasswordPage />} />
-          {/* <Route exact path={'*'} element={<NotFoundPage />} /> */}
+          <Route exact path={'*'} element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
       <FullscreenLoader />
